@@ -1,8 +1,14 @@
+//Sakthi B V
 package com.capg.springboot.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="user")
@@ -16,7 +22,21 @@ public class User
 	private String firstName;
 	private String lastName;
 	private String email;
-	Contact contact;
+	
+	@JsonIgnore
+	@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="contact_id")
+	private Contact contact;
+	
+	@JsonIgnore
+	@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="passenger_id")
+	private Passenger passenger;
+	
+	@JsonIgnore
+	@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="booking_id")
+	private Booking booking;
 	
 	public int getUserId() {
 		return UserId;
