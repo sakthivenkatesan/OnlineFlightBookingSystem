@@ -1,10 +1,11 @@
 //Sakthi B V
 package com.capg.springboot.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.capg.springboot.entity.User;
 import com.capg.springboot.exceptions.UserNotFoundException;
 
-public interface UserRepository {
+public interface UserRepository extends JpaRepository<User, String> {
 
 
 	static User findUserById(String id) {
@@ -16,9 +17,8 @@ public interface UserRepository {
 
 	User viewUserBy(String id) throws UserNotFoundException;
 
-	User save(User add);
-
 	User updateUser(User add);
 
+	User removeUser(User add);
 
 }

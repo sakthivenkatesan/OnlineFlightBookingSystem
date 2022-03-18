@@ -28,7 +28,7 @@ public class Passenger {
 	private String mealPref;
 	
 	@OneToOne(mappedBy = "passenger",fetch = FetchType.LAZY , cascade = CascadeType.ALL)
-    private User User;
+    private User user;
 	
 	public Passenger() {
 		super();
