@@ -19,7 +19,6 @@ import antlr.collections.List;
 
 @RequestMapping("/userController")
 @RestController
-
 public class UserController 
 {
 	@Autowired

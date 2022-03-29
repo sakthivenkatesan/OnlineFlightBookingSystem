@@ -12,16 +12,18 @@ public interface FleetService {
 
 	Fleet removeFleet(Fleet Fleet);
 
-	Fleet modifyFleet(Fleet Fleet, int FleetId);
-
-	Optional<Fleet> findFleetById(int fleetId);
-
-	Fleet viewFleetBy(String fleetid) throws Exception;
-
-	FleetService addFleet1(Fleet Fleet);
-
-	Fleet findFleetById(String fleetid);
-
-	Fleet save(Fleet add);
+	/*
+	 * Fleet modifyFleet(Fleet Fleet, int FleetId);
+	 * 
+	 * Optional<Fleet> findFleetById(int fleetId);
+	 * 
+	 * Fleet viewFleetBy(String fleetid) throws Exception;
+	 * 
+	 * FleetService addFleet1(Fleet Fleet);
+	 * 
+	 * Fleet findFleetById(String fleetid);
+	 * 
+	 * Fleet save(Fleet add);
+	 */
 
 }

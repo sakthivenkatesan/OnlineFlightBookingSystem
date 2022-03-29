@@ -2,16 +2,12 @@ package com.capg.springboot.service;
 
 
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.capg.springboot.entity.*;
-import com.capg.springboot.repository.*;
+import com.capg.springboot.entity.Flight;
+import com.capg.springboot.repository.FlightRepository;
 
 
 
@@ -30,7 +26,7 @@ public class FlightServiceImplementation implements FlightService {
 	return flight;
 	}
 	
-	@Override
+	/*@Override
 	
 	public Flight modifyFlight(Flight flight, int flightid) {
 		Optional<Flight> a = flightrepository.findById(flightid);
@@ -45,7 +41,7 @@ public class FlightServiceImplementation implements FlightService {
 			return modified;
 		}
 		return null;
-	}
+	}*/
 	
 	@Override
 	public Flight deleteFlight(Flight flight) {
@@ -55,7 +51,7 @@ public class FlightServiceImplementation implements FlightService {
 	}
 
 	@Override
-	public Flight modifyFlight(Flight flight) {
+	public Flight modifyFlight(Flight flight, int flightid) {
 		// TODO Auto-generated method stub
 		return null;
 	}

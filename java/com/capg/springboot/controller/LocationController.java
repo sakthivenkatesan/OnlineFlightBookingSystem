@@ -14,8 +14,6 @@ import com.capg.springboot.service.LocationService;
 
 @RequestMapping("/LocationController")
 @RestController
-
-
 public class LocationController {
 	@Autowired
 	private LocationService locationservice;

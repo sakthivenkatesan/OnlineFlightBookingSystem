@@ -7,7 +7,7 @@ public interface ContactService {
 
 	Contact addContact(Contact contact);
 
-	Contact modifycontact(Contact contact);
+	/*Contact modifycontact(Contact contact, int customerId);
 
-	Contact removeCustomer(Contact contact);
+	Contact removeCustomer(Contact contact);*/
 }

@@ -14,7 +14,6 @@ import com.capg.springboot.service.BookingService;
 
 @RequestMapping("/BookingController")
 @RestController
-
 public class BookingController 
 {
 	@Autowired
@@ -33,12 +32,12 @@ public class BookingController
 	//Booking makePayment(BookingDto payment);
 	//Booking cancelBooking(Booking payment);
 	
-	@DeleteMapping("/cancelBooking") 
+	/*@DeleteMapping("/cancelBooking") 
 	public ResponseEntity<Booking> cancelbooking(@RequestBody Booking payment)
 	{
 		bookingservice.cancelBooking(payment);
        return new ResponseEntity(payment,HttpStatus.OK); 
-    }
+    }*/
 	
 	
 }

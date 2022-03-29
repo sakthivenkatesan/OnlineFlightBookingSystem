@@ -13,6 +13,8 @@ import com.capg.springboot.entity.Contact;
 import com.capg.springboot.entity.User;
 import com.capg.springboot.service.ContactService;
 
+@RequestMapping("/contactController")
+@RestController
 public class contactController {
 	@Autowired
 	private ContactService contactservice;
@@ -25,21 +27,18 @@ public class contactController {
 		return new ResponseEntity(a ,HttpStatus.OK);
 	}
 	
-	//Modify contact method
-		@PostMapping("/modifyContact")
-		public ResponseEntity<Contact> modifyContact(@RequestBody Contact a)
-		{
-			contactservice.modifycontact(a);
-			return new ResponseEntity(a ,HttpStatus.OK);
-		}
-		
-		//Deleting a contact
-		@DeleteMapping("/deleteContact") 
-		public ResponseEntity<Contact> removeContact(@RequestBody Contact a)
-		{
-	       contactservice.removeCustomer(a);
-	       return new ResponseEntity(a ,HttpStatus.OK); 
-	    }
-	
+	/*
+	 * //Modify contact method
+	 * 
+	 * @PostMapping("/modifyContact") public ResponseEntity<Contact>
+	 * modifyContact(@RequestBody Contact a) { contactservice.modifycontact(a);
+	 * return new ResponseEntity(a ,HttpStatus.OK); }
+	 * 
+	 * //Deleting a contact
+	 * 
+	 * @DeleteMapping("/deleteContact") public ResponseEntity<Contact>
+	 * removeContact(@RequestBody Contact a) { contactservice.removeCustomer(a);
+	 * return new ResponseEntity(a ,HttpStatus.OK); }
+	 */
 
 }

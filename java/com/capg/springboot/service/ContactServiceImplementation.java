@@ -1,16 +1,12 @@
 package com.capg.springboot.service;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import com.capg.springboot.entity.*;
-import com.capg.springboot.exceptions.*;
-import com.capg.springboot.repository.*;
+
+import com.capg.springboot.entity.Contact;
+import com.capg.springboot.repository.ContactRepository;
 
 
-public class ContactServiceImplementation implements ContactRepository{
+public class ContactServiceImplementation implements ContactService{
 	@Autowired
 	private ContactRepository contactRepository;
 	
@@ -22,7 +18,7 @@ public class ContactServiceImplementation implements ContactRepository{
 		
 	}
 	
-	//Modify User
+	/*//Modify User
 		@Override
 		public Contact modifyContact(Contact contact, int customerId) {
 			Optional<Contact> a = contactRepository.findById(customerId);
@@ -48,30 +44,6 @@ public class ContactServiceImplementation implements ContactRepository{
             if(add==null)
             	throw new UserNotFoundException("Contact Not Found ");
         return add;
-	}
-
-	@Override
-	public Contact save(Contact add) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Contact updateContact(Contact add) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Contact viewContactBy(String customerId) throws UserNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Optional<Contact> findById(int customerId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	}*/
 
 }

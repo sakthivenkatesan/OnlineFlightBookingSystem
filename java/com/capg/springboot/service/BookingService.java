@@ -8,6 +8,6 @@ public interface BookingService
 
 	Booking makePayment(Booking payment);
 
-	Booking cancelBooking(Booking payment);
+	//Booking cancelBooking(Booking payment);
 	
 }

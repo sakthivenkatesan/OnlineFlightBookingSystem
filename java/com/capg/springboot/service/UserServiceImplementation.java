@@ -11,13 +11,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.capg.springboot.entity.User;
-import com.capg.springboot.exceptions.UserNotFoundException;
 import com.capg.springboot.entity.User;
 import com.capg.springboot.repository.UserRepository;
 
@@ -29,7 +25,7 @@ public class UserServiceImplementation implements UserRepository
 	private UserRepository userRepository;
 	
 	//Add User
-	@Override
+	/*@Override
 	public User addUser(User add) {
 		
 		return userRepository.save(add);
@@ -68,7 +64,7 @@ public class UserServiceImplementation implements UserRepository
 			  throw new UserNotFoundException("User Not Found");
 		  return user_info;
 	  }
-
+*/
 	@Override
 	public List<User> findAll() {
 		// TODO Auto-generated method stub

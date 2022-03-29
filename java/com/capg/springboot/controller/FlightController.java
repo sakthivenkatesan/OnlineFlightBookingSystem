@@ -12,11 +12,10 @@ package com.capg.springboot.controller;
 	import com.capg.springboot.entity.Flight;
 	import com.capg.springboot.service.FlightService;
 
-	@SuppressWarnings("unused")
-	@RequestMapping("/FlightController")
-	@RestController
-
-	public class FlightController
+@SuppressWarnings("unused")
+@RequestMapping("/FlightController")
+@RestController
+public class FlightController
 	{
 		@Autowired
 		private com.capg.springboot.service.FlightService FlightService;
@@ -29,13 +28,14 @@ package com.capg.springboot.controller;
 			return new ResponseEntity<Flight>(flight,HttpStatus.OK);
 		}
 		
-		//Modify flight method
-		@PostMapping("/modifyFlight")
-		public ResponseEntity<Flight> modifyFlight(@RequestBody Flight flight)
-		{
-			Flight custImpl=FlightService.modifyFlight(flight);
-			return new ResponseEntity<Flight>(custImpl,HttpStatus.OK);
-		}
+		/*
+		 * //Modify flight method
+		 * 
+		 * @PostMapping("/modifyFlight") public ResponseEntity<Flight>
+		 * modifyFlight(@RequestBody Flight flight) { Flight
+		 * custImpl=FlightService.modifyFlight(flight); return new
+		 * ResponseEntity<Flight>(custImpl,HttpStatus.OK); }
+		 */
 		
 		//Deleting flight
 		@DeleteMapping("/deleteFlight") 

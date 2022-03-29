@@ -12,11 +12,9 @@ import com.capg.springboot.entity.Fleet;
 import com.capg.springboot.service.FleetService;
 
 
-
+@SuppressWarnings("unused")
 @RequestMapping("/FleetController")
 @RestController
-
-
 public class FleetController {
 	@Autowired
 	private FleetService Fleetservice;
