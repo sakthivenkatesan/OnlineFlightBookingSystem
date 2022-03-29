@@ -1,0 +1,51 @@
+//BOOKING MODULE
+
+GET METHOD
+-----------
+http://localhost:9090/BookingController/viewAllBookings
+------------------------------------------------------
+OUTPUT
+------
+{
+    "BookingId": "1",
+	"bookingNumber": "1",
+	"bookingDate": "15",
+	"travelDate": "20",
+	"totalCost": "3000",
+	
+	"BookingId": "2",
+	"bookingNumber": "2",
+	"bookingDate": "16",
+	"travelDate": "21",
+	"totalCost": "2500",	
+}
+-------------------------------------------------------
+
+POST METHOD:
+------------
+http://localhost:9090/BookingController/makePayment
+------------------------------------------------------------
+
+{
+    "BookingId": "1",
+	"bookingNumber": "1",
+	"bookingDate": "15",
+	"travelDate": "20",
+	"totalCost": "3000",
+	
+}
+   
+
+DELETE METHOD:
+--------------
+http://localhost:9090/BookingController/cancelBooking
+-----------------------------------------------------
+OUTPUT
+------
+{
+    "BookingId": "2",
+	"bookingNumber": "2",
+	"bookingDate": "16",
+	"travelDate": "21",
+	"totalCost": "2500",
+}

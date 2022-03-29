@@ -1,0 +1,72 @@
+//PASSENGER MODULE
+
+GET METHOD:
+-----------
+http://localhost:9090/passengerController/viewAllPassenger
+---------------------------------------------------------
+OUTPUT:
+-------
+{
+    {
+        "passengerId": "2",
+        "firstName": "Ajith",
+        "lastName": "M S",
+        "age": "22",
+        "gender": "Male",
+        "passportNo": "123456",
+        "mealPref": "Veg",
+        "user": null
+    }
+}
+-----------------------------------------------------------
+POST METHOD:
+------------
+http://localhost:9090/passengerController/addPassenger
+------------------------------------------------------------
+ 
+ {
+        "passengerId": "1",
+        "firstName": "Varsha",
+        "lastName": "M ",
+        "age": "25",
+        "gender": "Female",
+        "passportNo": "654321",
+        "mealPref": "Non-Veg",
+        "user": {
+            "UserId": "1",
+        "userName": "AAA BBB",
+        "password": "aaa@124",
+        "firstName": "AAA",
+        "lastName": "BBB",
+        "email": "aaa@gmail.com"
+        }
+    }
+------------------------------------------------------------------
+    
+PUT METHOD:
+-----------
+http://localhost:9090/addressController/updatePassenger
+--------------------------------------------------------------------
+   {
+        "passengerId": "2",
+        "firstName": "Vijay",
+        "lastName": "M ",
+        "age": "45",
+        "gender": "Male",
+        "passportNo": "754321",
+        "mealPref": "Non-Veg",
+        "user": {
+            "UserId": "1",
+        	"userName": "AAA BBB",
+        	"password": "aaa@124",
+        	"firstName": "AAA",
+        	"lastName": "BBB",
+        	"email": "aaa@gmail.com"
+
+        }
+    }
+-------------------------------------------------------------------------
+DELETE METHOD:
+--------------
+http://localhost:9090/passengerController/removePassenger
+--------------------------------------------------------------------------

@@ -1,0 +1,79 @@
+
+
+// User MODULE
+
+Add User:
+POST :       Body  , raw   ,JSON
+
+http://localhost:9090/UserController/addUser
+{
+        "UserId": "1",
+        "userName": "AAA BBB",
+        "password": "aaa@124",
+        "firstName": "AAA",
+        "lastName": "BBB",
+        "email": "aaa@gmail.com"
+    }
+
+
+http://localhost:9090/customerController/addCust
+{
+        "UserId": "2",
+        "userName": "XXX YYY",
+        "password": "xxxy07",
+        "firstName": "XXX",
+        "lastName": "YYY",
+        "email": "xxxy@gmail.com"
+    }
+
+
+
+GET METHOD
+----------
+http://localhost:9090/UserController/viewAllUser
+---------------------------------------------------------------------------
+OUTPUT
+-----
+
+ 
+    {
+        "UserId": "1",
+        "userName": "AAA BBB",
+        "password": "aaa@124",
+        "firstName": "AAA",
+        "lastName": "BBB",
+        "email": "aaa@gmail.com"
+    },
+    {
+        "UserId": "2",
+        "userName": "XXX YYY",
+        "password": "xxxy07",
+        "firstName": "XXX",
+        "lastName": "YYY",
+        "email": "xxxy@gmail.com"
+    }
+   
+ ---------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ REMOVE METHOD 
+ -------------
+ http://localhost:9090/UserController/removeUser
+ ----------------------------------------------------------------------------
+ OUTPUT
+ -------
+ 
+ 
+ {
+        "UserId": "2",
+        "userName": "XXX YYY",
+        "password": "xxxy07",
+        "firstName": "XXX",
+        "lastName": "YYY",
+        "email": "xxxy@gmail.com"
+    }
+    

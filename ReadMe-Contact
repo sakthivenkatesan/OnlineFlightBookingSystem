@@ -1,0 +1,68 @@
+//CONTACT CONTROLLER
+GET METHOD:
+-----------
+http://localhost:9090/ContactController/viewAllContact
+---------------------------------------------------------
+OUTPUT:
+-------
+{
+    {
+        "CustomerId": "1",
+        "addressLine": "2/245,Chennai",
+        "zipCode" : "638401",
+        "city": "Chennai",
+        "state": "Tamilnadu",
+	    "country": "INDIA",
+	    "mobileNo":"979856789",
+    }
+}
+-----------------------------------------------------------
+POST METHOD:
+------------
+http://localhost:9090/ContactController/addContact
+------------------------------------------------------------
+ {
+    { 
+        "CustomerId": "2",
+        "addressLine": "2/35,Coimbatore",
+        "zipCode" : "638501",
+        "city": "Coimbatore",
+        "state": "Tamilnadu",
+	    "country": "INDIA",
+	    "mobileNo":"782476376",
+        }
+   }
+   PUT METHOD:
+-----------
+http://localhost:9090/ContactController/updateContact
+------------------------------------------------------------------
+OUTPUT:
+-------
+ {
+    {
+        "CustomerId": "3",
+        "addressLine": "6/245,Trichy",
+        "zipCode" : "638056",
+        "city": "Trichy",
+        "state": "Tamilnadu",
+	    "country": "INDIA",
+	    "mobileNo":"887645678",
+        }
+   }
+   ---------------------------------------------------------------------
+
+DELETE METHOD:
+--------------
+http://localhost:9090/ContactController/removeContact
+-----------------------------------------------------------------------
+OUTPUT:
+-------
+{ 
+        "CustomerId": "4",
+        "addressLine": "1/135,Banglore",
+        "zipCode" : "651337",
+        "city": "Banglore",
+        "state": "Karanataka",
+	    "country": "INDIA",
+	    "mobileNo":"900567898",
+ }

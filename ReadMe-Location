@@ -1,0 +1,62 @@
+// LOCATION CONTROLLER
+GET METHOD:
+-----------
+http://localhost:9090/LocationController/viewAllLocation
+---------------------------------------------------------
+OUTPUT:
+-------
+{
+    {
+        "LocationId": "1",
+        "LocationName": "Chennai",
+        "Locationcode": "440010",
+	       "country": "INDIA",
+	      " airportName":"Chennai International Airport",
+    }
+}
+-----------------------------------------------------------
+POST METHOD:
+------------
+http://localhost:9090/LocationController/addLocation
+------------------------------------------------------------
+ {
+    {
+        "LocationId": "2",
+        "LocationName": "Bangalore",
+        "Locationcode": "4400123",
+	       "country": "INDIA",
+	      " airportName":"Bangalore International Airport",
+     
+        }
+   }
+   PUT METHOD:
+-----------
+http://localhost:9090/LocationController/updateLocation
+------------------------------------------------------------------
+OUTPUT:
+-------
+ {
+    {
+        "LocationId": "3",
+        "LocationName": "Trichy",
+        "Locationcode": "620005",
+	       "country": "INDIA",
+	      " airportName":"Trichy International Airport",
+     
+        }
+   }
+   ---------------------------------------------------------------------
+
+DELETE METHOD:
+--------------
+http://localhost:9090/LocationController/removeLocation
+-----------------------------------------------------------------------
+OUTPUT:
+-------
+{
+       "LocationId": "5",
+        "LocationName": "Madurai",
+        "Locationcode": "607803",
+	       "country": "INDIA",
+	      " airportName":"Madurai International Airport",
+ }
